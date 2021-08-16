@@ -2,7 +2,6 @@ package com.deveco.multiplemediapicker.slice;
 
 import com.deveco.multiplemediapicker.ResourceTable;
 import com.deveco.multiplemediapicker.fraction.OneFraction;
-import com.deveco.multiplemediapicker.fraction.TwoFraction;
 import com.deveco.multiplemediapicker.interfaces.FractionClickListner;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.ability.fraction.Fraction;
@@ -153,9 +152,6 @@ public class HomeAbilitySlice extends AbilitySlice implements FractionClickListn
             if (position == 0) {
                 HiLog.info(LABEL, "PageSlider createPageInContainer create 0");
                 fraction = new OneFraction(HomeAbilitySlice.this, componentContainer);
-            } else if (position == 1) {
-                HiLog.info(LABEL, "PageSlider createPageInContainer create 1");
-                fraction = new TwoFraction(HomeAbilitySlice.this, componentContainer);
             }
             componentContainer.removeAllComponents();
             if (fraction != null) {
