@@ -1,0 +1,21 @@
+apply plugin: 'com.huawei.ohos.library'
+ohos {
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
+    
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13'
+    implementation 'io.openharmony.tpc.thirdlib:glide:1.0.9'
+}

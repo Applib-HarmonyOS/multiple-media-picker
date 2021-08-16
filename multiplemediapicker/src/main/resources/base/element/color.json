@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "black_background",
+      "value": "#000000"
+    },{
+      "name": "text_white",
+      "value": "#ffffff"
+    },{
+      "name": "text_dim_white",
+      "value": "#FFF5F5F5"
+    },{
+      "name": "tabs_selected_text_color",
+      "value": "#FFF51ED7"
+    },{
+      "name": "tabs_pager_color",
+      "value": "#FFF87575"
+    }
+  ]
+}
