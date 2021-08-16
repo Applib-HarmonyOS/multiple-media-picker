@@ -4,7 +4,7 @@
 ## NOTE: If you feel like this library can help you, feel free to fork or contribute creating pull requess (:
 
 ## Screenshot
-![Continuous, Discrete, Custom Java layout](Images/mediapicker.png)
+![Layout](Images/mediapicker.PNG)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 # Usage
