@@ -1,0 +1,11 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+/.idea/workspace.xml
+.DS_Store
+/build
+/*/build
+/*/DerivedSources
+/*/DerivedSources/prefixes.properties
+/projectFilesBackup/
