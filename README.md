@@ -13,7 +13,7 @@ The code in this repository was inspired from  https://github.com/erikagtierrez/
 
 ## Demo
 
-![Layout_ability_main](Images/mediapicker.png)
+![Layout_ability_main](Images/mediapicker.PNG)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
