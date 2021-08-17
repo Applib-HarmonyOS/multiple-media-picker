@@ -1,0 +1,40 @@
+{
+  "float": [
+    {
+      "name": "height_appBar",
+      "value": "56vp"
+    },
+    {
+      "name": "width_appBar_backButton_touchTarget",
+      "value": "48vp"
+    },
+    {
+      "name": "height_appBar_backButton_touchTarget",
+      "value": "56vp"
+    },
+    {
+      "name": "size_appBar_backButton",
+      "value": "24vp"
+    },
+    {
+      "name": "leftMargin_appBar_backButton_touchTarget",
+      "value": "14vp"
+    },
+    {
+      "name": "leftMargin_appBar_title",
+      "value": "6vp"
+    },
+    {
+      "name": "textSize_title",
+      "value": "20vp"
+    },
+    {
+      "name": "tabstextSize_title",
+      "value": "16vp"
+    },
+    {
+      "name": "tabs_hight",
+      "value": "50vp"
+    }
+  ]
+}

@@ -1,1 +1,1 @@
-include ':app', ':multiple-media-picker'
+include ':entry', ':multiplemediapicker'

@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "multiplemediapicker"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "media_ability",
+      "value": "Media Ability"
+    },
+    {
+      "name": "mediaability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "toolbar_title",
+      "value": "Select media"
+    },
+    {
+      "name": "one_fraction_Title",
+      "value": "Images"
+    },
+    {
+      "name": "two_fraction_Title",
+      "value": "Videos"
+    },
+    {
+      "name": "button_title",
+      "value": "Select Image"
+    }
+  ]
+}

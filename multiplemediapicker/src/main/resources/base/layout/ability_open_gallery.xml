@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+    <DirectionalLayout
+        ohos:id="$+id:appBar"
+        ohos:height="$float:height_appBar"
+        ohos:width="match_parent"
+        ohos:layout_direction="locale"
+        ohos:background_element="#512DA8"
+        ohos:orientation="horizontal">
+
+        <DirectionalLayout
+            ohos:id="$+id:appBar_backButton_touchTarget"
+            ohos:height="$float:height_appBar_backButton_touchTarget"
+            ohos:width="$float:width_appBar_backButton_touchTarget"
+            ohos:alignment="center"
+            ohos:background_element="#512DA8"
+            ohos:layout_direction="locale"
+            ohos:start_margin="$float:leftMargin_appBar_backButton_touchTarget">
+
+            <Image
+                ohos:id="$+id:appBar_backButton"
+                ohos:height="$float:size_appBar_backButton"
+                ohos:width="$float:size_appBar_backButton"
+                ohos:image_src="$graphic:back"
+                ohos:layout_direction="locale"/>
+        </DirectionalLayout>
+
+        <Text
+            ohos:id="$+id:appBar_title"
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:text_color="#FFF"
+            ohos:text_font="sans-serif"
+            ohos:start_margin="$float:leftMargin_appBar_title"
+            ohos:text="$string:toolbar_title"
+            ohos:text_size="$float:textSize_title"/>
+    </DirectionalLayout>
+
+    <ListContainer
+        ohos:id="$+id:list"
+        ohos:height="match_content"
+        ohos:width="match_parent"/>
+</DirectionalLayout>
