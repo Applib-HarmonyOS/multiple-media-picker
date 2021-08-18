@@ -40,7 +40,7 @@ allprojects {
 }
 task checkstyle(type: Checkstyle) {
     showViolations = true
-    configFile file("config/checkstyle/checkstyle_8_43.xml")
+    configFile file("config/checkstyle.xml")
 
     source 'entry/src/main/java'
     source 'flexiblesearchbarview/src/main/java'
