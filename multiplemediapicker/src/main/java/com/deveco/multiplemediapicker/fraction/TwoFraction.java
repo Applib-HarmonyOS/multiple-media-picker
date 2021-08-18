@@ -65,21 +65,6 @@ public class TwoFraction extends Fraction {
         map = imageSelect.getPicBuckets();
         bucketNames.addAll(map.get("bucketNames"));
         bitmapList.addAll(map.get("bitmapList"));
-
-        CustomAdapter mAdapter = new CustomAdapter(
-                bitmapList, bucketNames, layoutScatter.getContext());
-        listContainer.setBoundaryColor(new Color(0xffdddddd));
-        listContainer.setBoundaryThickness(2);
-        TableLayoutManager tableLayoutManager = new TableLayoutManager();
-        tableLayoutManager.setColumnCount(3);
-        listContainer.setLayoutManager(tableLayoutManager);
-        listContainer.setItemProvider(mAdapter);
-        fractionClickListner = (FractionClickListner) context;
-        listContainer.setItemClickedListener((
-                ListContainer listContainer1, Component component1, int pos, long l) -> {
-            fractionClickListner.itemClicked("VIDEOS", bitmapList, bucketNames);
-        });
-
         return component;
     }
 }
