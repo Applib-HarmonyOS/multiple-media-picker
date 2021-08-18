@@ -7,7 +7,6 @@ import ohos.data.resultset.ResultSet;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.media.photokit.metadata.AVStorage;
-
 import java.io.File;
 import java.util.*;
 
@@ -42,8 +41,7 @@ public class ImageSelection {
     }
 
     public Map<String,List<String>> getPicBuckets() {
-
-        Map<String,List<String>> map =new HashMap();
+     Map<String,List<String>> map =new HashMap();
         HiLog.info(LABEL, "getPicBuckets method called");
         DataAbilityHelper dataAbilityHelper = DataAbilityHelper.creator(layoutScatter.getContext());
         try {

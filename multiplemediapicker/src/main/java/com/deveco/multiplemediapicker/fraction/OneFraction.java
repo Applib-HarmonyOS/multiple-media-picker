@@ -11,7 +11,6 @@ import ohos.agp.utils.Color;
 import ohos.app.Context;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
-import ohos.media.photokit.metadata.AVStorage;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -30,11 +29,8 @@ public class OneFraction extends Fraction {
     Component component;
     FractionClickListner fractionClickListner;
     ImageSelection imageSelect;
+    Map<String, List<String>> map ;
     static final HiLogLabel LABEL = new HiLogLabel(HiLog.DEBUG, 0x00201, "one_fragment");
-    private String[] projection = new String[]{
-            AVStorage.Images.Media.DISPLAY_NAME, AVStorage.Images.Media.DATA};
-    private String[] projection2 = new String[]{
-            AVStorage.Images.Media.DISPLAY_NAME, AVStorage.Images.Media.DATA};
     private List<String> bucketNames = new ArrayList<>();
     private List<String> bitmapList = new ArrayList<>();
     protected static final List<String> imagesList = new ArrayList<>();
@@ -64,7 +60,7 @@ public class OneFraction extends Fraction {
         bitmapList.clear();
         imagesList.clear();
         bucketNames.clear();
-        Map<String, List<String>> map = new HashMap<String, List<String>>();
+        map = new HashMap();
         imageSelect = new ImageSelection(this.layoutScatter);
         map = imageSelect.getPicBuckets();
         bucketNames.addAll(map.get("bucketNames"));
@@ -82,7 +78,6 @@ public class OneFraction extends Fraction {
         fractionClickListner = (FractionClickListner) context;
         listContainer.setItemClickedListener((
                 ListContainer listContainer1, Component component1, int pos, long l) -> {
-                 //   getPictures(bucketNames.get(pos));
                     fractionClickListner.itemClicked("IMAGES", bitmapList, bucketNames);
                 });
         return component;

@@ -11,7 +11,6 @@ import ohos.agp.utils.Color;
 import ohos.app.Context;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -78,7 +77,6 @@ public class TwoFraction extends Fraction {
         fractionClickListner = (FractionClickListner) context;
         listContainer.setItemClickedListener((
                 ListContainer listContainer1, Component component1, int pos, long l) -> {
-          //  getPictures();
             fractionClickListner.itemClicked("VIDEOS", bitmapList, bucketNames);
         });
 
