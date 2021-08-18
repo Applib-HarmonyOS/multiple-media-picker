@@ -11,34 +11,31 @@ import ohos.agp.utils.Color;
 import ohos.app.Context;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
-import ohos.media.photokit.metadata.AVStorage;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 /**
- * OneFraction represent the media image picker.
+ * TwoFraction  represent the media Video picker.
  *
- * @since 2021-08-03
- **/
+ * @since   2021-08-03
+ */
 
-public class OneFraction extends Fraction {
+public class TwoFraction extends Fraction {
 
     ComponentContainer layoutScatter;
     Context context;
     Component component;
-    FractionClickListner fractionClickListner;
     ImageSelection imageSelect;
-    static final HiLogLabel LABEL = new HiLogLabel(HiLog.DEBUG, 0x00201, "one_fragment");
-    private String[] projection = new String[]{
-            AVStorage.Images.Media.DISPLAY_NAME, AVStorage.Images.Media.DATA};
-    private String[] projection2 = new String[]{
-            AVStorage.Images.Media.DISPLAY_NAME, AVStorage.Images.Media.DATA};
-    private List<String> bucketNames = new ArrayList<>();
+    ImageSelection imagePic;
+    static final HiLogLabel LABEL = new HiLogLabel(HiLog.DEBUG, 0x00201, "Multiple_media_picker");
+     private List<String> bucketNames = new ArrayList<>();
     private List<String> bitmapList = new ArrayList<>();
     protected static final List<String> imagesList = new ArrayList<>();
     protected static final List<Boolean> selected = new ArrayList<>();
+    FractionClickListner fractionClickListner;
 
     @Override
     protected Component onComponentAttached(
@@ -47,14 +44,14 @@ public class OneFraction extends Fraction {
         return component;
     }
 
-    public OneFraction(Context context, ComponentContainer layoutScatter) {
+    public TwoFraction(Context context, ComponentContainer layoutScatter) {
         this.context = context;
         this.layoutScatter = layoutScatter;
     }
 
     @Override
     public Component getComponent() {
-
+        imagePic = new ImageSelection(this.layoutScatter);
         HiLog.info(LABEL, "layoutScatter " + this.layoutScatter);
         HiLog.info(LABEL, "context " + this.context);
         component = LayoutBoost.inflate(
@@ -70,7 +67,6 @@ public class OneFraction extends Fraction {
         bucketNames.addAll(map.get("bucketNames"));
         bitmapList.addAll(map.get("bitmapList"));
 
-        HiLog.info(LABEL, "bitmapList image path :  " + bitmapList.size());
         CustomAdapter mAdapter = new CustomAdapter(
                 bitmapList, bucketNames, layoutScatter.getContext());
         listContainer.setBoundaryColor(new Color(0xffdddddd));
@@ -82,9 +78,10 @@ public class OneFraction extends Fraction {
         fractionClickListner = (FractionClickListner) context;
         listContainer.setItemClickedListener((
                 ListContainer listContainer1, Component component1, int pos, long l) -> {
-                 //   getPictures(bucketNames.get(pos));
-                    fractionClickListner.itemClicked("IMAGES", bitmapList, bucketNames);
-                });
+          //  getPictures();
+            fractionClickListner.itemClicked("VIDEOS", bitmapList, bucketNames);
+        });
+
         return component;
     }
 }
