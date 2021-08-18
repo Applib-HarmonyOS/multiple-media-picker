@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:id="$+id:appBar"
+        ohos:height="$float:height_appBar"
+        ohos:width="match_parent"
+        ohos:layout_direction="locale"
+        ohos:background_element="#512DA8"
+        ohos:orientation="horizontal">
+
+        <DirectionalLayout
+            ohos:id="$+id:appBar_backButton_touchTarget"
+            ohos:height="$float:height_appBar_backButton_touchTarget"
+            ohos:width="$float:width_appBar_backButton_touchTarget"
+            ohos:alignment="center"
+            ohos:background_element="#512DA8"
+            ohos:layout_direction="locale"
+            ohos:start_margin="$float:leftMargin_appBar_backButton_touchTarget">
+
+            <Image
+                ohos:id="$+id:appBar_backButton"
+                ohos:height="$float:size_appBar_backButton"
+                ohos:width="$float:size_appBar_backButton"
+                ohos:image_src="$graphic:back"
+                ohos:layout_direction="locale"/>
+        </DirectionalLayout>
+
+        <Text
+            ohos:id="$+id:appBar_title"
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:text_color="#FFF"
+            ohos:text_font="sans-serif"
+            ohos:start_margin="$float:leftMargin_appBar_title"
+            ohos:text="$string:toolbar_title"
+            ohos:text_size="$float:textSize_title"/>
+    </DirectionalLayout>
+
+    <TabList
+        ohos:id="$+id:tabs"
+        ohos:height="$float:tabs_hight"
+        ohos:width="match_parent"
+        ohos:layout_alignment="center"
+        ohos:normal_text_color="$color:text_dim_white"
+        ohos:orientation="horizontal"
+        ohos:selected_tab_indicator_color="$color:tabs_selected_text_color"
+        ohos:selected_tab_indicator_height="2vp"
+        ohos:selected_text_color="$color:text_white"
+        ohos:background_element="#512DA8"
+        ohos:tab_length="140vp"
+        ohos:tab_margin="24vp"
+        ohos:text_alignment="center"
+        ohos:text_size="$float:tabstextSize_title"/>
+
+    <PageSlider
+        ohos:id="$+id:page_slider"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:background_element="#FFF"
+        ohos:orientation="horizontal"/>
+
+</DirectionalLayout>
