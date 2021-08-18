@@ -124,9 +124,6 @@ Modifications required in ContactPickerAbility.java.
 - Feel free to open issues if you find some bug or unexpected behaviour
 - I'll keep polishing and giving support to this library in my free time
 
-## Acknowledgments
-
- [MaterialLetterIcon](https://github.com/erikagtierrez/multiple-media-picker.git) For the cool image icon in Image selection list
 
 # License
 

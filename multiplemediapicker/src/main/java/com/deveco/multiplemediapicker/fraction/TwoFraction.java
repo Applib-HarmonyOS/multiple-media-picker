@@ -17,24 +17,24 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * OneFraction represent the media image picker.
+ * TwoFraction  represent the media Video picker.
  *
- * @since 2021-08-03
- **/
+ * @since   2021-08-03
+ */
 
-public class OneFraction extends Fraction {
+public class TwoFraction extends Fraction {
 
     ComponentContainer layoutScatter;
     Context context;
     Component component;
-    FractionClickListner fractionClickListner;
     ImageSelection imageSelect;
-    Map<String, List<String>> map ;
-    static final HiLogLabel LABEL = new HiLogLabel(HiLog.DEBUG, 0x00201, "one_fragment");
-    private List<String> bucketNames = new ArrayList<>();
+    ImageSelection imagePic;
+    static final HiLogLabel LABEL = new HiLogLabel(HiLog.DEBUG, 0x00201, "Multiple_media_picker");
+     private List<String> bucketNames = new ArrayList<>();
     private List<String> bitmapList = new ArrayList<>();
     protected static final List<String> imagesList = new ArrayList<>();
     protected static final List<Boolean> selected = new ArrayList<>();
+    FractionClickListner fractionClickListner;
 
     @Override
     protected Component onComponentAttached(
@@ -43,14 +43,14 @@ public class OneFraction extends Fraction {
         return component;
     }
 
-    public OneFraction(Context context, ComponentContainer layoutScatter) {
+    public TwoFraction(Context context, ComponentContainer layoutScatter) {
         this.context = context;
         this.layoutScatter = layoutScatter;
     }
 
     @Override
     public Component getComponent() {
-
+        imagePic = new ImageSelection(this.layoutScatter);
         HiLog.info(LABEL, "layoutScatter " + this.layoutScatter);
         HiLog.info(LABEL, "context " + this.context);
         component = LayoutBoost.inflate(
@@ -60,26 +60,11 @@ public class OneFraction extends Fraction {
         bitmapList.clear();
         imagesList.clear();
         bucketNames.clear();
-        map = new HashMap();
+        Map<String, List<String>> map = new HashMap<String, List<String>>();
         imageSelect = new ImageSelection(this.layoutScatter);
         map = imageSelect.getPicBuckets();
         bucketNames.addAll(map.get("bucketNames"));
         bitmapList.addAll(map.get("bitmapList"));
-
-        HiLog.info(LABEL, "bitmapList image path :  " + bitmapList.size());
-        CustomAdapter mAdapter = new CustomAdapter(
-                bitmapList, bucketNames, layoutScatter.getContext());
-        listContainer.setBoundaryColor(new Color(0xffdddddd));
-        listContainer.setBoundaryThickness(2);
-        TableLayoutManager tableLayoutManager = new TableLayoutManager();
-        tableLayoutManager.setColumnCount(3);
-        listContainer.setLayoutManager(tableLayoutManager);
-        listContainer.setItemProvider(mAdapter);
-        fractionClickListner = (FractionClickListner) context;
-        listContainer.setItemClickedListener((
-                ListContainer listContainer1, Component component1, int pos, long l) -> {
-                    fractionClickListner.itemClicked("IMAGES", bitmapList, bucketNames);
-                });
         return component;
     }
 }
