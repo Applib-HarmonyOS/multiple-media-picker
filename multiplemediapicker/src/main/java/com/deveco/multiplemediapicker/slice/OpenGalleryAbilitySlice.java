@@ -8,10 +8,11 @@ import ohos.agp.components.*;
 import ohos.agp.components.element.Element;
 import ohos.agp.components.element.ElementScatter;
 import ohos.agp.utils.Color;
-import ohos.hiviewdfx.HiLog;
-import ohos.hiviewdfx.HiLogLabel;
 import java.util.ArrayList;
 import java.util.List;
+import ohos.hiviewdfx.HiLog;
+import ohos.hiviewdfx.HiLogLabel;
+
 
 /**
  * OpenGalleryAbilitySlice represent the selected media picker.

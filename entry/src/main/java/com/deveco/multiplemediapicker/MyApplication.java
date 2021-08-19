@@ -19,17 +19,17 @@ package com.deveco.multiplemediapicker;
 import ohos.aafwk.ability.AbilityPackage;
 
 /**
- *Shows the MyApplication page of Media picker.
+ * Shows the MyApplication page of Media picker.
  */
 
 public class MyApplication extends AbilityPackage {
 
-  /**
-   *onInitialize in Media page.
-   */
+    /**
+     * onInitialize in Media page.
+     */
 
-  @Override
+    @Override
     public void onInitialize() {
-    super.onInitialize();
-  }
+        super.onInitialize();
+    }
 }

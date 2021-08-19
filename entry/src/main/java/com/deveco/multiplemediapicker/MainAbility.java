@@ -21,18 +21,18 @@ import ohos.aafwk.content.Intent;
 import com.deveco.multiplemediapicker.slice.MainAbilitySlice;
 
 /**
- *Shows the MainAbility page of Media picker.
+ * Shows the MainAbility page of Media picker.
  */
 
 public class MainAbility extends Ability {
 
-      /**
-     *Start in Media page.
+    /**
+     * Start in Media page.
      */
 
-      @Override
-      public void onStart(Intent intent) {
-         super.onStart(intent);
-         super.setMainRoute(MainAbilitySlice.class.getName());
+    @Override
+    public void onStart(Intent intent) {
+        super.onStart(intent);
+        super.setMainRoute(MainAbilitySlice.class.getName());
     }
 }
