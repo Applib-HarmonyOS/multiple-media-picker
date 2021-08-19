@@ -17,8 +17,8 @@
 package com.deveco.multiplemediapicker;
 
 import ohos.aafwk.ability.Ability;
-import com.deveco.multiplemediapicker.slice.MainAbilitySlice;
 import ohos.aafwk.content.Intent;
+import com.deveco.multiplemediapicker.slice.MainAbilitySlice;
 
 /**
  *Shows the MainAbility page of Media picker.
@@ -26,9 +26,9 @@ import ohos.aafwk.content.Intent;
 
 public class MainAbility extends Ability {
 
-  /**
-   *Start in Media page.
-   */
+     /**
+     *Start in Media page.
+     */
 
       @Override
       public void onStart(Intent intent) {
