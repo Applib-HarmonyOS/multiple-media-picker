@@ -26,7 +26,7 @@ import com.deveco.multiplemediapicker.slice.MainAbilitySlice;
 
 public class MainAbility extends Ability {
 
-     /**
+      /**
      *Start in Media page.
      */
 
