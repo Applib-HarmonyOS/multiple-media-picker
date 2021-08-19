@@ -41,7 +41,7 @@ public class ImageSelection {
     }
 
     public Map<String,List<String>> getPicBuckets() {
-     Map<String,List<String>> map =new HashMap();
+     Map<String,List<String>> map =new HashMap<String,List<String>>();
         HiLog.info(LABEL, "getPicBuckets method called");
         DataAbilityHelper dataAbilityHelper = DataAbilityHelper.creator(layoutScatter.getContext());
         try {

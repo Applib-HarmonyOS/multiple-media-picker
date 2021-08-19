@@ -1,13 +1,11 @@
 package com.deveco.multiplemediapicker.fraction;
 
 import com.deveco.multiplemediapicker.ResourceTable;
-import com.deveco.multiplemediapicker.adapter.CustomAdapter;
 import com.deveco.multiplemediapicker.interfaces.FractionClickListner;
 import ohos.aafwk.ability.fraction.Fraction;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.*;
 import ohos.agp.render.layoutboost.LayoutBoost;
-import ohos.agp.utils.Color;
 import ohos.app.Context;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
@@ -55,8 +53,6 @@ public class TwoFraction extends Fraction {
         HiLog.info(LABEL, "context " + this.context);
         component = LayoutBoost.inflate(
                 context, ResourceTable.Layout_fraction_one, this.layoutScatter, false);
-        ListContainer listContainer = (ListContainer)
-                component.findComponentById(ResourceTable.Id_list);
         bitmapList.clear();
         imagesList.clear();
         bucketNames.clear();

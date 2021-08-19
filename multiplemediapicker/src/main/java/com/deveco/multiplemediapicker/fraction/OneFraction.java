@@ -60,7 +60,7 @@ public class OneFraction extends Fraction {
         bitmapList.clear();
         imagesList.clear();
         bucketNames.clear();
-        map = new HashMap();
+        map = new HashMap<String,List<String>>();
         imageSelect = new ImageSelection(this.layoutScatter);
         map = imageSelect.getPicBuckets();
         bucketNames.addAll(map.get("bucketNames"));
