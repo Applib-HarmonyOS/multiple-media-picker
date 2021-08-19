@@ -55,8 +55,6 @@ public class TwoFraction extends Fraction {
         HiLog.info(LABEL, "context " + this.context);
         component = LayoutBoost.inflate(
                 context, ResourceTable.Layout_fraction_one, this.layoutScatter, false);
-        ListContainer listContainer = (ListContainer)
-                component.findComponentById(ResourceTable.Id_list);
         bitmapList.clear();
         imagesList.clear();
         bucketNames.clear();
