@@ -17,13 +17,13 @@
 package com.deveco.multiplemediapicker.slice;
 
 import ohos.aafwk.ability.AbilitySlice;
-import com.deveco.multiplemediapicker.ResourceTable;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.Button;
 import ohos.bundle.IBundleManager;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.security.SystemPermission;
+import com.deveco.multiplemediapicker.ResourceTable;
 
 /**
  * Shows the main page of unified Media picker.
