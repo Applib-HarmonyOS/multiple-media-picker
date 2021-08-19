@@ -1,8 +1,7 @@
 # Multiple Media Picker:
 
-[![.github/workflows/main.yml](https://github.com/applibgroup/UnifiedContactPicker/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/UnifiedContactPicker/actions/workflows/main.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_UnifiedContactPicker2&metric=alert_status)](https://sonarcloud.io/dashboard?id=applibgroup_UnifiedContactPicker2)
-
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_multiple-media-picker&metric=alert_status)](https://sonarcloud.io/dashboard?id=applibgroup_multiple-media-picker)
+[![Build](https://github.com/applibgroup/multiple-media-picker/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/multiple-media-picker/actions/workflows/main.yml)
 ## Introduction
 
 An android library to pick multiple images and/or videos from built-in gallery. This library is encouraged to use as little memory as possible. 
