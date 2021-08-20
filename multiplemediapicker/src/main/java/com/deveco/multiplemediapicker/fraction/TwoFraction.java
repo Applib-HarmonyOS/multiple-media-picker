@@ -17,10 +17,7 @@ import java.util.Map;
 
 /**
  * TwoFraction  represent the media Video picker.
- *
- * @since 2021-08-03
  */
-
 public class TwoFraction extends Fraction {
 
     ComponentContainer layoutScatter;

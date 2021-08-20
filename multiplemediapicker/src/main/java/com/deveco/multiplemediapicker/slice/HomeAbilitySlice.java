@@ -17,10 +17,7 @@ import java.util.List;
 
 /**
  * HomeAbilitySlice contains TabList and PageSlider.
- *
- * @since 2021-08-03
  */
-
 public class HomeAbilitySlice extends AbilitySlice implements FractionClickListner {
 
     protected static int selectionTitle;
@@ -126,8 +123,6 @@ public class HomeAbilitySlice extends AbilitySlice implements FractionClickListn
 
     /**
      * MultiplePageSliderProvider.
-     *
-     * @since 2021-08-03
      */
     public class MultiplePageSliderProvider extends PageSliderProvider {
 

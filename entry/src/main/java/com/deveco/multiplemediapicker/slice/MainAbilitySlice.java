@@ -28,7 +28,6 @@ import com.deveco.multiplemediapicker.ResourceTable;
 /**
  * Shows the main page of unified Media picker.
  */
-
 public class MainAbilitySlice extends AbilitySlice {
 
     Button button;
@@ -37,7 +36,6 @@ public class MainAbilitySlice extends AbilitySlice {
     /**
      * Start Main Choose Media page.
      */
-
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);

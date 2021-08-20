@@ -11,11 +11,8 @@ import java.io.File;
 import java.util.*;
 
 /**
- * OneFraction represent the media image picker.
- *
- * @since 2021-08-03
- **/
-
+ * ImageSelection represent the media image picker.
+ */
 public class ImageSelection {
 
     public int a = 11;
@@ -95,5 +92,4 @@ public class ImageSelection {
 
         return map;
     }
-
 }

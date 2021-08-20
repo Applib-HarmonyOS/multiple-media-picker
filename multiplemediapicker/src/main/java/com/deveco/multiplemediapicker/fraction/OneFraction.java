@@ -18,10 +18,7 @@ import java.util.Map;
 
 /**
  * OneFraction represent the media image picker.
- *
- * @since 2021-08-03
- **/
-
+ */
 public class OneFraction extends Fraction {
 
     ComponentContainer layoutScatter;
