@@ -9,6 +9,7 @@ import ohos.agp.render.layoutboost.LayoutBoost;
 import ohos.app.Context;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,7 +18,7 @@ import java.util.Map;
 /**
  * TwoFraction  represent the media Video picker.
  *
- * @since   2021-08-03
+ * @since 2021-08-03
  */
 
 public class TwoFraction extends Fraction {
@@ -28,7 +29,7 @@ public class TwoFraction extends Fraction {
     ImageSelection imageSelect;
     ImageSelection imagePic;
     static final HiLogLabel LABEL = new HiLogLabel(HiLog.DEBUG, 0x00201, "Multiple_media_picker");
-     private List<String> bucketNames = new ArrayList<>();
+    private List<String> bucketNames = new ArrayList<>();
     private List<String> bitmapList = new ArrayList<>();
     protected static final List<String> imagesList = new ArrayList<>();
     protected static final List<Boolean> selected = new ArrayList<>();
@@ -56,11 +57,13 @@ public class TwoFraction extends Fraction {
         bitmapList.clear();
         imagesList.clear();
         bucketNames.clear();
-        Map<String, List<String>> map = new HashMap<String, List<String>>();
+        HashMap<String, List<String>> map;
         imageSelect = new ImageSelection(this.layoutScatter);
-        map = imageSelect.getPicBuckets();
-        bucketNames.addAll(map.get("bucketNames"));
-        bitmapList.addAll(map.get("bitmapList"));
+        map = (HashMap<String, List<String>>) imageSelect.getPicBuckets();
+        if (map != null) {
+            bucketNames.addAll(map.get("bucketNames"));
+            bitmapList.addAll(map.get("bitmapList"));
+        }
         return component;
     }
 }
