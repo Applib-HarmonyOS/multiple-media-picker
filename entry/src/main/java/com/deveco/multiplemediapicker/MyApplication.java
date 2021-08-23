@@ -21,13 +21,11 @@ import ohos.aafwk.ability.AbilityPackage;
 /**
  * Shows the MyApplication page of Media picker.
  */
-
 public class MyApplication extends AbilityPackage {
 
     /**
      * onInitialize in Media page.
      */
-
     @Override
     public void onInitialize() {
         super.onInitialize();

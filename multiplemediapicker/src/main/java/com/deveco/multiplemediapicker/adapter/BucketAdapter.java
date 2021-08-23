@@ -14,20 +14,18 @@ import java.util.List;
 
 /**
  * BucketAdapter represent the media adapter.
- *
- * @since 2021-08-03
- **/
-
+ */
 public class BucketAdapter extends BaseItemProvider {
-    private  Context context;
-     Image thumbnail;
-     Image selectIcon;
-     Component componentLayout;
+    private Context context;
+    Image thumbnail;
+    Image selectIcon;
+    Component componentLayout;
     private List<String> bitmapList;
     private List<String> bitmapName;
     private List<Boolean> selected;
     static final HiLogLabel LABEL = new HiLogLabel(
             HiLog.DEBUG, 0x00201, "BucketAdapter");
+
     public BucketAdapter(
             List<String> image, List<String> bitName, List<Boolean> select, Context context) {
         this.bitmapList = bitName;

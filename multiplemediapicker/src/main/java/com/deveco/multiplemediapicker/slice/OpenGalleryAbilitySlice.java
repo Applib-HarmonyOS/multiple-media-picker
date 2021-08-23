@@ -13,13 +13,9 @@ import java.util.List;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
-
 /**
  * OpenGalleryAbilitySlice represent the selected media picker.
- *
- * @since 2021-08-03
  */
-
 public class OpenGalleryAbilitySlice extends AbilitySlice {
 
     private int maxSelection = 3;
@@ -116,5 +112,4 @@ public class OpenGalleryAbilitySlice extends AbilitySlice {
         }
         backButton.setClickedListener(component -> onBackPressed());
     }
-
 }

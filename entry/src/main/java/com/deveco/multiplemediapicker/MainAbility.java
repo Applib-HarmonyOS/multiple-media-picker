@@ -23,13 +23,11 @@ import com.deveco.multiplemediapicker.slice.MainAbilitySlice;
 /**
  * Shows the MainAbility page of Media picker.
  */
-
 public class MainAbility extends Ability {
 
     /**
      * Start in Media page.
      */
-
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
