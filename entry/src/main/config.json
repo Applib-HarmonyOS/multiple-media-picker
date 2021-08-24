@@ -14,7 +14,7 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.deveco.multiplemediapicker",
+    "package": "com.erikagtierrez.multiplemediapicker",
     "name": ".MyApplication",
     "deviceType": [
       "phone","tv","tablet"
@@ -37,7 +37,7 @@
           }
         ],
         "orientation": "unspecified",
-        "name": "com.deveco.multiplemediapicker.MainAbility",
+        "name": "com.erikagtierrez.multiplemediapicker.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "label": "$string:app_name",

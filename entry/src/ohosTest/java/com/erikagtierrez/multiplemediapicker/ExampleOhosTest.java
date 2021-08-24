@@ -14,23 +14,25 @@
  * limitations under the License.
  */
 
-package com.deveco.multiplemediapicker;
+package com.erikagtierrez.multiplemediapicker;
 
-import ohos.aafwk.ability.Ability;
-import ohos.aafwk.content.Intent;
-import com.deveco.multiplemediapicker.slice.MainAbilitySlice;
+import ohos.aafwk.ability.delegation.AbilityDelegatorRegistry;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 /**
- * Shows the MainAbility page of Media picker.
+ *Shows the ohos Test page of Media picker
  */
-public class MainAbility extends Ability {
+
+public class ExampleOhosTest {
 
     /**
-     * Start in Media page.
+     *Ohos Test in Media page.
      */
-    @Override
-    public void onStart(Intent intent) {
-        super.onStart(intent);
-        super.setMainRoute(MainAbilitySlice.class.getName());
+
+    @Test
+    public void testBundleName() {
+        final String actualBundleName = AbilityDelegatorRegistry.getArguments().getTestBundleName();
+        assertEquals("com.erikagutierrez.multiplemediapicker", actualBundleName);
     }
 }

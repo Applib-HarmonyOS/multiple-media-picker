@@ -1,12 +1,19 @@
-package com.deveco.multiplemediapicker.slice;
+package com.erikagtierrez.multiplemediapicker.slice;
 
-import com.deveco.multiplemediapicker.ResourceTable;
-import com.deveco.multiplemediapicker.fraction.OneFraction;
-import com.deveco.multiplemediapicker.interfaces.FractionClickListner;
+import com.erikagtierrez.multiplemediapicker.ResourceTable;
+import com.erikagtierrez.multiplemediapicker.fraction.OneFraction;
+import com.erikagtierrez.multiplemediapicker.interfaces.FractionClickListner;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.ability.fraction.Fraction;
 import ohos.aafwk.content.Intent;
-import ohos.agp.components.*;
+import ohos.agp.components.Component;
+import ohos.agp.components.ComponentContainer;
+import ohos.agp.components.DirectionalLayout;
+import ohos.agp.components.Image;
+import ohos.agp.components.PageSlider;
+import ohos.agp.components.PageSliderProvider;
+import ohos.agp.components.TabList;
+import ohos.agp.components.Text;
 import ohos.agp.components.element.Element;
 import ohos.agp.components.element.ElementScatter;
 import ohos.app.Context;

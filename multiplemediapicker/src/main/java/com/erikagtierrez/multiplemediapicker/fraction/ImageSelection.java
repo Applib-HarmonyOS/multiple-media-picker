@@ -1,4 +1,4 @@
-package com.deveco.multiplemediapicker.fraction;
+package com.erikagtierrez.multiplemediapicker.fraction;
 
 import ohos.aafwk.ability.DataAbilityHelper;
 import ohos.aafwk.ability.DataAbilityRemoteException;
@@ -8,7 +8,11 @@ import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.media.photokit.metadata.AVStorage;
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 
 /**
  * ImageSelection represent the media image picker.
