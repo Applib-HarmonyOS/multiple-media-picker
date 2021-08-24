@@ -1,8 +1,12 @@
-package com.deveco.multiplemediapicker.adapter;
+package com.erikagtierrez.multiplemediapicker.adapter;
 
 import com.bumptech.glide.Glide;
-import com.deveco.multiplemediapicker.ResourceTable;
-import ohos.agp.components.*;
+import com.erikagtierrez.multiplemediapicker.ResourceTable;
+import ohos.agp.components.BaseItemProvider;
+import ohos.agp.components.Component;
+import ohos.agp.components.ComponentContainer;
+import ohos.agp.components.Image;
+import ohos.agp.components.Text;
 import ohos.agp.render.layoutboost.LayoutBoost;
 import ohos.app.Context;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.deveco.multiplemediapicker.interfaces;
+package com.erikagtierrez.multiplemediapicker.interfaces;
 
 import java.util.List;
 

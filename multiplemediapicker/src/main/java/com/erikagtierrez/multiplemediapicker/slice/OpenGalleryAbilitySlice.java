@@ -1,10 +1,15 @@
-package com.deveco.multiplemediapicker.slice;
+package com.erikagtierrez.multiplemediapicker.slice;
 
-import com.deveco.multiplemediapicker.ResourceTable;
-import com.deveco.multiplemediapicker.adapter.BucketAdapter;
+import com.erikagtierrez.multiplemediapicker.ResourceTable;
+import com.erikagtierrez.multiplemediapicker.adapter.BucketAdapter;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
-import ohos.agp.components.*;
+import ohos.agp.components.Component;
+import ohos.agp.components.DirectionalLayout;
+import ohos.agp.components.Image;
+import ohos.agp.components.ListContainer;
+import ohos.agp.components.TableLayoutManager;
+import ohos.agp.components.Text;
 import ohos.agp.components.element.Element;
 import ohos.agp.components.element.ElementScatter;
 import ohos.agp.utils.Color;

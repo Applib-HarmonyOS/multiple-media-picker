@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.deveco.multiplemediapicker;
+package com.erikagtierrez.multiplemediapicker;
 
 import ohos.aafwk.ability.AbilityPackage;
 

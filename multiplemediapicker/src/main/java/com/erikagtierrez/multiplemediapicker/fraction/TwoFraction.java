@@ -1,19 +1,19 @@
-package com.deveco.multiplemediapicker.fraction;
+package com.erikagtierrez.multiplemediapicker.fraction;
 
-import com.deveco.multiplemediapicker.ResourceTable;
-import com.deveco.multiplemediapicker.interfaces.FractionClickListner;
+import com.erikagtierrez.multiplemediapicker.ResourceTable;
+import com.erikagtierrez.multiplemediapicker.interfaces.FractionClickListner;
 import ohos.aafwk.ability.fraction.Fraction;
 import ohos.aafwk.content.Intent;
-import ohos.agp.components.*;
+import ohos.agp.components.Component;
+import ohos.agp.components.ComponentContainer;
+import ohos.agp.components.LayoutScatter;
 import ohos.agp.render.layoutboost.LayoutBoost;
 import ohos.app.Context;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * TwoFraction  represent the media Video picker.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.deveco.multiplemediapicker.slice;
+package com.erikagtierrez.multiplemediapicker.slice;
 
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
@@ -23,7 +23,7 @@ import ohos.bundle.IBundleManager;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.security.SystemPermission;
-import com.deveco.multiplemediapicker.ResourceTable;
+import com.erikagtierrez.multiplemediapicker.ResourceTable;
 
 /**
  * Shows the main page of unified Media picker.
